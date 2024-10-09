@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.12 on linux)" generated="2024-10-09T16:57:11.131791" rpa="false" schemaversion="5">
+<suite id="s1" name="TC02" source="/opt/dev/projects/RobotFeedz/Tests/Feedz/TC02.robot">
+<test id="s1-t1" name="TC02 - Acesse a aba de meu perfil" line="7">
+<kw name="Dado que eu acesse feedz" owner="Login_Steps">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:11.248010" level="INFO">Opening browser 'chrome' to base url 'https://app.feedz.com.br/inicio'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-09T16:57:11.247738" elapsed="2.391314"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-09T16:57:13.639993" elapsed="0.048124"/>
+</kw>
+<status status="PASS" start="2024-10-09T16:57:11.247118" elapsed="2.441290"/>
+</kw>
+<kw name="E realize o login" owner="Login_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Login.Preencher_Email}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:13.692892" elapsed="0.092222"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:13.786841" level="INFO">Typing text 'jacksonsantos@almavivasolutions.com.br' into text field '//*[@id="login_email"]'.</msg>
+<arg>${Login.Preencher_Email}</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:13.785475" elapsed="0.114579"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Login.Preencher_Senha}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:13.900531" elapsed="0.017471"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:13.919830" level="INFO">Clicking element '//*[@id="passInput"]'.</msg>
+<arg>${Login.Preencher_Senha}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:13.918321" elapsed="0.029310"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:13.948535" level="INFO">Typing text 'JSdS210455$#' into text field '//*[@id="passInput"]'.</msg>
+<arg>${Login.Preencher_Senha}</arg>
+<arg>${Senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:13.947920" elapsed="0.086616"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Login.Clicar_Entrar}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:14.034906" elapsed="0.014565"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:14.050320" level="INFO">Clicking element '//*[@id="enter-login"]'.</msg>
+<arg>${Login.Clicar_Entrar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:14.049763" elapsed="0.025348"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-09T16:57:29.076883" level="INFO">Slept 15 seconds.</msg>
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-09T16:57:14.075602" elapsed="15.001918"/>
+</kw>
+<status status="PASS" start="2024-10-09T16:57:13.688974" elapsed="15.388936"/>
+</kw>
+<kw name="Dado que eu esteja na pagina inicial do Feedz" owner="AbaMeuPerfil_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Click_Dropdown}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:29.079542" elapsed="4.689610"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:33.770034" level="INFO">Clicking element '//*[@id="dropdownMenuMobile"]'.</msg>
+<arg>${Aba.Click_Dropdown}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:33.769462" elapsed="0.033471"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Perfil_Link}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:33.803239" elapsed="0.015641"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:33.819804" level="INFO">Clicking element '//a[@href="/perfil"]'.</msg>
+<arg>${Aba.Perfil_Link}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:33.819215" elapsed="1.039689"/>
+</kw>
+<status status="PASS" start="2024-10-09T16:57:29.078647" elapsed="5.780523"/>
+</kw>
+<kw name="E esteja no meu perfil" owner="AbaMeuPerfil_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Clicar_Linguagem}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:34.860241" elapsed="0.018716"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:34.880252" level="INFO">Clicking element '//*[@id="lang"]'.</msg>
+<arg>${Aba.Clicar_Linguagem}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:34.879500" elapsed="0.041540"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Linguagem_Escolhida}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:34.921569" elapsed="0.017208"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:34.939645" level="INFO">Clicking element '//*[@value="en_US"]'.</msg>
+<arg>${Aba.Linguagem_Escolhida}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:34.939074" elapsed="0.021571"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Informação_De_Contato}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:34.961098" elapsed="0.015790"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:34.979050" level="INFO">Clicking element '(//select[contains(@class, 'custom-select') and contains(@class, 'infoOption')])[2]'.</msg>
+<arg>${Aba.Informação_De_Contato}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:34.977285" elapsed="0.042202"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Whatsapp_Escolhido}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.019847" elapsed="0.023996"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:35.045597" level="INFO">Clicking element '(//*[@value="0"])[2]'.</msg>
+<arg>${Aba.Whatsapp_Escolhido}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.044426" elapsed="0.020588"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Adicionar_Numero}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.065315" elapsed="0.015545"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:35.081726" level="INFO">Clicking element '(//*[contains(@class, 'form-control') and contains(@class, 'infoInput')])[2]'.</msg>
+<arg>${Aba.Adicionar_Numero}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.081156" elapsed="0.032251"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${Aba.Adicionar_Numero}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.114178" elapsed="0.022642"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:35.137967" level="INFO">Typing text '(11) 97803-4185' into text field '(//*[contains(@class, 'form-control') and contains(@class, 'infoInput')])[2]'.</msg>
+<arg>${Aba.Adicionar_Numero}</arg>
+<arg>${Telefone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.137250" elapsed="0.056519"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Segunda_Informação_De_Contato}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.194101" elapsed="0.053935"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:35.249054" level="INFO">Clicking element '(//select[contains(@class, 'custom-select') and contains(@class, 'infoOption')])[3]'.</msg>
+<arg>${Aba.Segunda_Informação_De_Contato}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.248390" elapsed="0.033276"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Linkedin_Escolhido}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.282418" elapsed="0.027069"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:35.310372" level="INFO">Clicking element '(//*[@value="3"])[3]'.</msg>
+<arg>${Aba.Linkedin_Escolhido}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.309791" elapsed="0.018730"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Adicionar_Linkedin}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.329286" elapsed="0.014376"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:35.344541" level="INFO">Clicking element '(//*[contains(@class, 'form-control') and contains(@class, 'infoInput')])[3]'.</msg>
+<arg>${Aba.Adicionar_Linkedin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.343955" elapsed="0.032137"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:35.377219" level="INFO">Typing text 'https://www.linkedin.com/in/jackson-sousa-120479244/' into text field '(//*[contains(@class, 'form-control') and contains(@class, 'infoInput')])[3]'.</msg>
+<arg>${Aba.Adicionar_Linkedin}</arg>
+<arg>${linkedin}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.376478" elapsed="0.069063"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Adicionar_Novo}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.445896" elapsed="0.012515"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:35.459302" level="INFO">Clicking element '(//button[@id="btn-add-information-item"])[1]'.</msg>
+<arg>${Aba.Adicionar_Novo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.458699" elapsed="0.031647"/>
+</kw>
+<status status="PASS" start="2024-10-09T16:57:34.859713" elapsed="0.630855"/>
+</kw>
+<kw name="E esteja em informações" owner="AbaMeuPerfil_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Link_Informações}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.491538" elapsed="0.015281"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:35.507683" level="INFO">Clicking element '//a[@href="#information"]'.</msg>
+<arg>${Aba.Link_Informações}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.507108" elapsed="0.030390"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Adcionar_Função}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.537788" elapsed="0.224448"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:35.763109" level="INFO">Clicking element '//textarea[contains(@class, 'form-control') and contains(@class, 'col-md-12')]'.</msg>
+<arg>${Aba.Adcionar_Função}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.762534" elapsed="0.027853"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${Aba.Adcionar_Função}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.790685" elapsed="0.126455"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:35.918060" level="INFO">Typing text 'Trainee' into text field '//textarea[contains(@class, 'form-control') and contains(@class, 'col-md-12')]'.</msg>
+<arg>${Aba.Adcionar_Função}</arg>
+<arg>${biografia}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.917449" elapsed="0.046592"/>
+</kw>
+<status status="PASS" start="2024-10-09T16:57:35.490991" elapsed="0.473314"/>
+</kw>
+<kw name="E esteja em educação" owner="AbaMeuPerfil_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Link_Educação}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.965364" elapsed="0.014755"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:35.981023" level="INFO">Clicking element '//a[@href="#academic-education"]'.</msg>
+<arg>${Aba.Link_Educação}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:35.980444" elapsed="0.028632"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Botão_AdicionarNovo}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.009382" elapsed="0.235542"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:36.245832" level="INFO">Clicking element '(//button[@id="btn-add-information-item"])[2]'.</msg>
+<arg>${Aba.Botão_AdicionarNovo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.245232" elapsed="0.024468"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Instituição_Ensino}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.269994" elapsed="0.254436"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:36.525444" level="INFO">Clicking element '//input[@id="academic_education_institution"]'.</msg>
+<arg>${Aba.Instituição_Ensino}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.524768" elapsed="0.033148"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:36.559108" level="INFO">Typing text 'Cruzeiro do Sul' into text field '//input[@id="academic_education_institution"]'.</msg>
+<arg>${Aba.Instituição_Ensino}</arg>
+<arg>${Instituição}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.558214" elapsed="0.051050"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Formação_Curso}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.609563" elapsed="0.015254"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:36.625925" level="INFO">Clicking element '(//input[contains(@class, 'form-control') and contains(@class, 'academic_education_name')])[2]'.</msg>
+<arg>${Aba.Formação_Curso}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.625241" elapsed="0.032479"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:36.658658" level="INFO">Typing text 'ADS' into text field '(//input[contains(@class, 'form-control') and contains(@class, 'academic_education_name')])[2]'.</msg>
+<arg>${Aba.Formação_Curso}</arg>
+<arg>${Formação}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.658012" elapsed="0.043351"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.ÁreaCurso}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.701713" elapsed="0.014625"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:36.717408" level="INFO">Clicking element '(//input[contains(@class, 'form-control')])[22]'.</msg>
+<arg>${Aba.ÁreaCurso}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.716694" elapsed="0.027681"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:36.746087" level="INFO">Typing text 'TI' into text field '(//input[contains(@class, 'form-control')])[22]'.</msg>
+<arg>${Aba.ÁreaCurso}</arg>
+<arg>${ÁreaDeCurso}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.744695" elapsed="0.039984"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Data_Inicio}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.784981" elapsed="0.013384"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:36.800285" level="INFO">Clicking element '(//input[contains(@class, 'form-control')])[23]'.</msg>
+<arg>${Aba.Data_Inicio}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.798769" elapsed="0.043619"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:36.843376" level="INFO">Typing text '19/09/2022' into text field '(//input[contains(@class, 'form-control')])[23]'.</msg>
+<arg>${Aba.Data_Inicio}</arg>
+<arg>${DataI}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.842745" elapsed="0.056866"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Data_Termino}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.900940" elapsed="0.051096"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:36.952933" level="INFO">Clicking element '(//input[contains(@class, 'form-control')])[24]'.</msg>
+<arg>${Aba.Data_Termino}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.952358" elapsed="0.037517"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:36.990776" level="INFO">Typing text '26/092024' into text field '(//input[contains(@class, 'form-control')])[24]'.</msg>
+<arg>${Aba.Data_Termino}</arg>
+<arg>${DataF}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:36.990173" elapsed="0.045556"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-09T16:57:40.036642" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-09T16:57:37.036022" elapsed="3.001323"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Salvar}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:40.037947" elapsed="0.029993"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:40.068843" level="INFO">Clicking button '(//button[@type='submit'])[1]'.</msg>
+<arg>${Aba.Salvar}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:40.068252" elapsed="1.191789"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Botão_Ok}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:41.260461" elapsed="0.026478"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:41.287986" level="INFO">Clicking element '(//button[contains(@class, 'confirm')])[1]'.</msg>
+<arg>${Aba.Botão_Ok}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:41.287293" elapsed="0.039287"/>
+</kw>
+<status status="PASS" start="2024-10-09T16:57:35.964834" elapsed="5.361994"/>
+</kw>
+<kw name="E esteja em notificação" owner="AbaMeuPerfil_Steps">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Link_Notificação}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:41.328604" elapsed="0.020530"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:41.350092" level="INFO">Clicking element '//a[@href="#notificacoes"]'.</msg>
+<arg>${Aba.Link_Notificação}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:41.349463" elapsed="0.124606"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:41.474995" level="INFO">Clicking element '//a[@href="#notificacoes"]'.</msg>
+<arg>${Aba.Link_Notificação}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:41.474415" elapsed="0.027473"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Lembrete_Feedback}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:41.502191" elapsed="0.236112"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:41.739159" level="INFO">Clicking element '(//span[contains(@class, 'slider round')])[1]'.</msg>
+<arg>${Aba.Lembrete_Feedback}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:41.738598" elapsed="0.025484"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:41.764942" level="INFO">Clicking element '(//span[contains(@class, 'slider round')])[1]'.</msg>
+<arg>${Aba.Lembrete_Feedback}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:41.764384" elapsed="0.026604"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Lembrete_Celebrações}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:41.791358" elapsed="0.015949"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:41.808190" level="INFO">Clicking element '(//span[contains(@class, 'slider round')])[2]'.</msg>
+<arg>${Aba.Lembrete_Celebrações}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:41.807615" elapsed="0.026496"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Atualizações_OKR}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:41.834434" elapsed="0.013777"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:41.849152" level="INFO">Clicking element '(//span[contains(@class, 'slider round')])[3]'.</msg>
+<arg>${Aba.Atualizações_OKR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:41.848523" elapsed="0.026235"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Nova_Celebração}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:41.875051" elapsed="0.014378"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:41.890312" level="INFO">Clicking element '(//span[contains(@class, 'slider round')])[4]'.</msg>
+<arg>${Aba.Nova_Celebração}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:41.889723" elapsed="0.031582"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:41.922662" level="INFO">Clicking element '(//span[contains(@class, 'slider round')])[4]'.</msg>
+<arg>${Aba.Nova_Celebração}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:41.921843" elapsed="0.091835"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Novo_Feedback}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:42.014073" elapsed="0.018623"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:42.033583" level="INFO">Clicking element '(//span[contains(@class, 'slider round')])[5]'.</msg>
+<arg>${Aba.Novo_Feedback}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:42.032995" elapsed="0.025032"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:42.059026" level="INFO">Clicking element '(//span[contains(@class, 'slider round')])[5]'.</msg>
+<arg>${Aba.Novo_Feedback}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:42.058333" elapsed="0.026270"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Aba.Novo_Objetivo}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-09T16:57:42.084896" elapsed="0.014904"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T16:57:42.100796" level="INFO">Clicking element '(//span[contains(@class, 'slider round')])[6]'.</msg>
+<arg>${Aba.Novo_Objetivo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T16:57:42.100125" elapsed="0.029256"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-09T16:57:47.130150" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-09T16:57:42.129668" elapsed="5.001158"/>
+</kw>
+<status status="PASS" start="2024-10-09T16:57:41.327312" elapsed="5.803865"/>
+</kw>
+<kw name="Fechar Navegador" owner="Login_Steps" type="TEARDOWN">
+<kw name="E fecho o navegador" owner="Login_Steps">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-09T16:57:47.133886" elapsed="0.098046"/>
+</kw>
+<status status="PASS" start="2024-10-09T16:57:47.133167" elapsed="0.099380"/>
+</kw>
+<status status="PASS" start="2024-10-09T16:57:47.132224" elapsed="0.100461"/>
+</kw>
+<status status="PASS" start="2024-10-09T16:57:11.246357" elapsed="35.986598"/>
+</test>
+<status status="PASS" start="2024-10-09T16:57:11.134050" elapsed="36.099856"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC02">TC02</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
