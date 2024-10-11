@@ -1,168 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.10.12 on linux)" generated="2024-10-10T14:01:50.911358" rpa="false" schemaversion="5">
-<suite id="s1" name="TC03" source="/opt/dev/projects/FeedzRobot/Tests/Feedz/TC03.robot">
-<test id="s1-t1" name="TC03 - Acesse a aba organograma" line="7">
+<robot generator="Robot 7.1 (Python 3.10.12 on linux)" generated="2024-10-11T14:11:09.858170" rpa="false" schemaversion="5">
+<suite id="s1" name="TC04" source="/opt/dev/projects/FeedzRobot/Tests/Feedz/TC04.robot">
+<test id="s1-t1" name="TC04 - Acesse a aba colaboradores" line="7">
 <kw name="Dado que eu acesse feedz" owner="Login_Steps">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-10-10T14:01:51.031319" level="INFO">Opening browser 'chrome' to base url 'https://app.feedz.com.br/inicio'.</msg>
+<msg time="2024-10-11T14:11:09.998010" level="INFO">Opening browser 'chrome' to base url 'https://app.feedz.com.br/inicio'.</msg>
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-10-10T14:01:51.031040" elapsed="2.921532"/>
+<status status="PASS" start="2024-10-11T14:11:09.997702" elapsed="1.978548"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-10-10T14:01:53.953594" elapsed="0.063793"/>
+<status status="PASS" start="2024-10-11T14:11:11.976696" elapsed="0.087194"/>
 </kw>
-<status status="PASS" start="2024-10-10T14:01:51.030419" elapsed="2.987415"/>
+<status status="PASS" start="2024-10-11T14:11:09.996806" elapsed="2.067724"/>
 </kw>
 <kw name="E realize o login" owner="Login_Steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${Login.Preencher_Email}</arg>
 <arg>15</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-10T14:01:54.027482" elapsed="0.062055"/>
+<status status="PASS" start="2024-10-11T14:11:12.066306" elapsed="0.079364"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-10T14:01:54.091275" level="INFO">Typing text 'jacksonsantos@almavivasolutions.com.br' into text field '//*[@id="login_email"]'.</msg>
+<msg time="2024-10-11T14:11:12.147346" level="INFO">Typing text 'jacksonsantos@almavivasolutions.com.br' into text field '//*[@id="login_email"]'.</msg>
 <arg>${Login.Preencher_Email}</arg>
 <arg>${Email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-10T14:01:54.090126" elapsed="0.124081"/>
+<status status="PASS" start="2024-10-11T14:11:12.146154" elapsed="0.258781"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${Login.Preencher_Senha}</arg>
 <arg>15</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-10T14:01:54.214832" elapsed="0.018108"/>
+<status status="PASS" start="2024-10-11T14:11:12.405252" elapsed="0.015291"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-10T14:01:54.233837" level="INFO">Clicking element '//*[@id="passInput"]'.</msg>
+<msg time="2024-10-11T14:11:12.421706" level="INFO">Clicking element '//*[@id="passInput"]'.</msg>
 <arg>${Login.Preencher_Senha}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-10T14:01:54.233244" elapsed="0.028239"/>
+<status status="PASS" start="2024-10-11T14:11:12.420938" elapsed="0.039371"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-10T14:01:54.262988" level="INFO">Typing text 'JSdS210455$#' into text field '//*[@id="passInput"]'.</msg>
+<msg time="2024-10-11T14:11:12.463582" level="INFO">Typing text 'JSdS210455$#' into text field '//*[@id="passInput"]'.</msg>
 <arg>${Login.Preencher_Senha}</arg>
 <arg>${Senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-10T14:01:54.261854" elapsed="0.038287"/>
+<status status="PASS" start="2024-10-11T14:11:12.461208" elapsed="0.045673"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${Login.Clicar_Entrar}</arg>
 <arg>15</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-10T14:01:54.300564" elapsed="0.014243"/>
+<status status="PASS" start="2024-10-11T14:11:12.507367" elapsed="0.014170"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-10T14:01:54.315726" level="INFO">Clicking element '//*[@id="enter-login"]'.</msg>
+<msg time="2024-10-11T14:11:12.522428" level="INFO">Clicking element '//*[@id="enter-login"]'.</msg>
 <arg>${Login.Clicar_Entrar}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-10T14:01:54.315133" elapsed="0.026668"/>
+<status status="PASS" start="2024-10-11T14:11:12.521831" elapsed="0.026434"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-10T14:02:09.343031" level="INFO">Slept 15 seconds.</msg>
+<msg time="2024-10-11T14:11:27.549737" level="INFO">Slept 15 seconds.</msg>
 <arg>15s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-10T14:01:54.342254" elapsed="15.001427"/>
+<status status="PASS" start="2024-10-11T14:11:12.548750" elapsed="15.001690"/>
 </kw>
-<status status="PASS" start="2024-10-10T14:01:54.019306" elapsed="15.324747"/>
+<status status="PASS" start="2024-10-11T14:11:12.065394" elapsed="15.485496"/>
 </kw>
-<kw name="Dado que eu esteja na pagina inicial do Feedz2" owner="Organograma_Steps">
+<kw name="Dado que eu esteja na pagina inicial do Feedz3" owner="Colaboradores_Steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Organograma.Click_Caixinha}</arg>
+<arg>${Colaboradores.Click_Caixinha}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-10T14:02:09.345922" elapsed="3.835574"/>
+<status status="PASS" start="2024-10-11T14:11:27.553467" elapsed="0.031947"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-10T14:02:13.182371" level="INFO">Clicking element '//*[@id="dropdownMenuMobile"]'.</msg>
-<arg>${Organograma.Click_Caixinha}</arg>
+<msg time="2024-10-11T14:11:27.586321" level="INFO">Clicking element '//*[@id="dropdownMenuMobile"]'.</msg>
+<msg time="2024-10-11T14:11:28.805414" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-11T14:11:28.805798" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button tabindex="1" class="btn btn-default dropdown-toggle fdz-menu-profile-info" id="dropdownMenuMobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;...&lt;/button&gt; is not clickable at point (1680, 32). Other element would receive the click: &lt;div class="ckt-modal" id="notice-board-modal-420368" role="dialog" aria-label="Comunicado" aria-modal="true" data-v-3ce49f1a="" style=""&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.70)
+Stacktrace:
+#0 0x5b77d27e802a &lt;unknown&gt;
+#1 0x5b77d24ce5e0 &lt;unknown&gt;
+#2 0x5b77d2524866 &lt;unknown&gt;
+#3 0x5b77d252278d &lt;unknown&gt;
+#4 0x5b77d2520237 &lt;unknown&gt;
+#5 0x5b77d251f646 &lt;unknown&gt;
+#6 0x5b77d2512a98 &lt;unknown&gt;
+#7 0x5b77d2542b22 &lt;unknown&gt;
+#8 0x5b77d2512478 &lt;unknown&gt;
+#9 0x5b77d2542cee &lt;unknown&gt;
+#10 0x5b77d2561d7d &lt;unknown&gt;
+#11 0x5b77d25428c3 &lt;unknown&gt;
+#12 0x5b77d25106b3 &lt;unknown&gt;
+#13 0x5b77d251168e &lt;unknown&gt;
+#14 0x5b77d27b2a2b &lt;unknown&gt;
+#15 0x5b77d27b69b1 &lt;unknown&gt;
+#16 0x5b77d279f225 &lt;unknown&gt;
+#17 0x5b77d27b7532 &lt;unknown&gt;
+#18 0x5b77d278438f &lt;unknown&gt;
+#19 0x5b77d27d6f28 &lt;unknown&gt;
+#20 0x5b77d27d70f3 &lt;unknown&gt;
+#21 0x5b77d27e6e7c &lt;unknown&gt;
+#22 0x701124e94ac3 &lt;unknown&gt;
+</msg>
+<arg>${Colaboradores.Click_Caixinha}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-10T14:02:13.181798" elapsed="0.034703"/>
+<status status="FAIL" start="2024-10-11T14:11:27.585715" elapsed="1.222071">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button tabindex="1" class="btn btn-default dropdown-toggle fdz-menu-profile-info" id="dropdownMenuMobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;...&lt;/button&gt; is not clickable at point (1680, 32). Other element would receive the click: &lt;div class="ckt-modal" id="notice-board-modal-420368" role="dialog" aria-label="Comunicado" aria-modal="true" data-v-3ce49f1a="" style=""&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.70)
+Stacktrace:
+#0 0x5b77d27e802a &lt;unknown&gt;
+#1 0x5b77d24ce5e0 &lt;unknown&gt;
+#2 0x5b77d2524866 &lt;unknown&gt;
+#3 0x5b77d252278d &lt;unknown&gt;
+#4 0x5b77d2520237 &lt;unknown&gt;
+#5 0x5b77d251f646 &lt;unknown&gt;
+#6 0x5b77d2512a98 &lt;unknown&gt;
+#7 0x5b77d2542b22 &lt;unknown&gt;
+#8 0x5b77d2512478 &lt;unknown&gt;
+#9 0x5b77d2542cee &lt;unknown&gt;
+#10 0x5b77d2561d7d &lt;unknown&gt;
+#11 0x5b77d25428c3 &lt;unknown&gt;
+#12 0x5b77d25106b3 &lt;unknown&gt;
+#13 0x5b77d251168e &lt;unknown&gt;
+#14 0x5b77d27b2a2b &lt;unknown&gt;
+#15 0x5b77d27b69b1 &lt;unknown&gt;
+#16 0x5b77d279f225 &lt;unknown&gt;
+#17 0x5b77d27b7532 &lt;unknown&gt;
+#18 0x5b77d278438f &lt;unknown&gt;
+#19 0x5b77d27d6f28 &lt;unknown&gt;
+#20 0x5b77d27d70f3 &lt;unknown&gt;
+#21 0x5b77d27e6e7c &lt;unknown&gt;
+#22 0x701124e94ac3 &lt;unknown&gt;
+</status>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Organograma.Perfil_Organograma}</arg>
+<arg>${Colaboradores.Perfil_Colaboradores}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-10T14:02:13.216795" elapsed="0.016283"/>
+<status status="NOT RUN" start="2024-10-11T14:11:28.808181" elapsed="0.000147"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-10T14:02:13.233947" level="INFO">Clicking element '//a[@href="/organograma"]'.</msg>
-<arg>${Organograma.Perfil_Organograma}</arg>
+<arg>${Colaboradores.Perfil_Colaboradores}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-10T14:02:13.233384" elapsed="1.475390"/>
+<status status="NOT RUN" start="2024-10-11T14:11:28.808506" elapsed="0.000076"/>
 </kw>
-<status status="PASS" start="2024-10-10T14:02:09.344986" elapsed="5.364016"/>
+<status status="FAIL" start="2024-10-11T14:11:27.552132" elapsed="1.256628">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button tabindex="1" class="btn btn-default dropdown-toggle fdz-menu-profile-info" id="dropdownMenuMobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;...&lt;/button&gt; is not clickable at point (1680, 32). Other element would receive the click: &lt;div class="ckt-modal" id="notice-board-modal-420368" role="dialog" aria-label="Comunicado" aria-modal="true" data-v-3ce49f1a="" style=""&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.70)
+Stacktrace:
+#0 0x5b77d27e802a &lt;unknown&gt;
+#1 0x5b77d24ce5e0 &lt;unknown&gt;
+#2 0x5b77d2524866 &lt;unknown&gt;
+#3 0x5b77d252278d &lt;unknown&gt;
+#4 0x5b77d2520237 &lt;unknown&gt;
+#5 0x5b77d251f646 &lt;unknown&gt;
+#6 0x5b77d2512a98 &lt;unknown&gt;
+#7 0x5b77d2542b22 &lt;unknown&gt;
+#8 0x5b77d2512478 &lt;unknown&gt;
+#9 0x5b77d2542cee &lt;unknown&gt;
+#10 0x5b77d2561d7d &lt;unknown&gt;
+#11 0x5b77d25428c3 &lt;unknown&gt;
+#12 0x5b77d25106b3 &lt;unknown&gt;
+#13 0x5b77d251168e &lt;unknown&gt;
+#14 0x5b77d27b2a2b &lt;unknown&gt;
+#15 0x5b77d27b69b1 &lt;unknown&gt;
+#16 0x5b77d279f225 &lt;unknown&gt;
+#17 0x5b77d27b7532 &lt;unknown&gt;
+#18 0x5b77d278438f &lt;unknown&gt;
+#19 0x5b77d27d6f28 &lt;unknown&gt;
+#20 0x5b77d27d70f3 &lt;unknown&gt;
+#21 0x5b77d27e6e7c &lt;unknown&gt;
+#22 0x701124e94ac3 &lt;unknown&gt;
+</status>
 </kw>
-<kw name="E esteja no organograma" owner="Organograma_Steps">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Organograma.Zoom_Mais}</arg>
-<arg>10</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-10T14:02:14.709914" elapsed="0.538042"/>
+<kw name="E esteja no colaboradores" owner="Colaboradores_Steps">
+<status status="NOT RUN" start="2024-10-11T14:11:28.809403" elapsed="0.000161"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-10T14:02:15.249900" level="INFO">Clicking element '//*[@id="zoom1"]'.</msg>
-<arg>${Organograma.Zoom_Mais}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-10T14:02:15.248638" elapsed="0.176776"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Organograma.Zoom_Menos}</arg>
-<arg>10</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-10T14:02:15.426046" elapsed="0.072416"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-10T14:02:15.499445" level="INFO">Clicking element '//*[@id="zoom2"]'.</msg>
-<arg>${Organograma.Zoom_Menos}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-10T14:02:15.498797" elapsed="0.099441"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Organograma.Acessar_Informações}</arg>
-<arg>10</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-10T14:02:15.598621" elapsed="0.055853"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-10T14:02:15.655487" level="INFO">Clicking element '//b[text()="Marcelo Nappi"]'.</msg>
-<arg>${Organograma.Acessar_Informações}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-10T14:02:15.654840" elapsed="1.203844"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-10T14:02:21.860233" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-10T14:02:16.859655" elapsed="5.001219"/>
-</kw>
-<status status="PASS" start="2024-10-10T14:02:14.709451" elapsed="7.151802"/>
+<kw name="E acesse o colaborador" owner="Colaboradores_Steps">
+<status status="NOT RUN" start="2024-10-11T14:11:28.810088" elapsed="0.000215"/>
 </kw>
 <kw name="Fechar Navegador" owner="Login_Steps" type="TEARDOWN">
 <kw name="E fecho o navegador" owner="Login_Steps">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-10-10T14:02:21.864171" elapsed="0.115141"/>
+<status status="PASS" start="2024-10-11T14:11:28.811610" elapsed="0.113536"/>
 </kw>
-<status status="PASS" start="2024-10-10T14:02:21.863322" elapsed="0.117217"/>
+<status status="PASS" start="2024-10-11T14:11:28.811326" elapsed="0.114353"/>
 </kw>
-<status status="PASS" start="2024-10-10T14:02:21.862254" elapsed="0.118533"/>
+<status status="PASS" start="2024-10-11T14:11:28.810940" elapsed="0.114915"/>
 </kw>
-<status status="PASS" start="2024-10-10T14:01:51.029720" elapsed="30.952263"/>
+<status status="FAIL" start="2024-10-11T14:11:09.995921" elapsed="18.933581">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button tabindex="1" class="btn btn-default dropdown-toggle fdz-menu-profile-info" id="dropdownMenuMobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;...&lt;/button&gt; is not clickable at point (1680, 32). Other element would receive the click: &lt;div class="ckt-modal" id="notice-board-modal-420368" role="dialog" aria-label="Comunicado" aria-modal="true" data-v-3ce49f1a="" style=""&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.70)
+Stacktrace:
+#0 0x5b77d27e802a &lt;unknown&gt;
+#1 0x5b77d24ce5e0 &lt;unknown&gt;
+#2 0x5b77d2524866 &lt;unknown&gt;
+#3 0x5b77d252278d &lt;unknown&gt;
+#4 0x5b77d2520237 &lt;unknown&gt;
+#5 0x5b77d251f646 &lt;unknown&gt;
+#6 0x5b77d2512a98 &lt;unknown&gt;
+#7 0x5b77d2542b22 &lt;unknown&gt;
+#8 0x5b77d2512478 &lt;unknown&gt;
+#9 0x5b77d2542cee &lt;unknown&gt;
+#10 0x5b77d2561d7d &lt;unknown&gt;
+#11 0x5b77d25428c3 &lt;unknown&gt;
+#12 0x5b77d25106b3 &lt;unknown&gt;
+#13 0x5b77d251168e &lt;unknown&gt;
+#14 0x5b77d27b2a2b &lt;unknown&gt;
+#15 0x5b77d27b69b1 &lt;unknown&gt;
+#16 0x5b77d279f225 &lt;unknown&gt;
+#17 0x5b77d27b7532 &lt;unknown&gt;
+#18 0x5b77d278438f &lt;unknown&gt;
+#19 0x5b77d27d6f28 &lt;unknown&gt;
+#20 0x5b77d27d70f3 &lt;unknown&gt;
+#21 0x5b77d27e6e7c &lt;unknown&gt;
+#22 0x701124e94ac3 &lt;unknown&gt;
+</status>
 </test>
-<status status="PASS" start="2024-10-10T14:01:50.913548" elapsed="31.072057"/>
+<status status="FAIL" start="2024-10-11T14:11:09.860769" elapsed="19.070058"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TC03">TC03</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC04">TC04</stat>
 </suite>
 </statistics>
 <errors>
