@@ -1,158 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.10.12 on linux)" generated="2024-10-14T15:17:31.237849" rpa="false" schemaversion="5">
-<suite id="s1" name="TC05" source="/opt/dev/projects/FeedzRobot/Tests/Feedz/TC05.robot">
-<test id="s1-t1" name="TC05 - Acesse a aba comunicados" line="7">
+<robot generator="Robot 7.1 (Python 3.10.12 on linux)" generated="2024-10-14T16:50:13.411399" rpa="false" schemaversion="5">
+<suite id="s1" name="TC06" source="/opt/dev/projects/FeedzRobot/Tests/Feedz/TC06.robot">
+<test id="s1-t1" name="TC05 - Acesse a aba faleRH" line="7">
 <kw name="Dado que eu acesse feedz" owner="Login_Steps">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-10-14T15:17:31.367036" level="INFO">Opening browser 'chrome' to base url 'https://app.feedz.com.br/inicio'.</msg>
+<msg time="2024-10-14T16:50:13.551181" level="INFO">Opening browser 'chrome' to base url 'https://app.feedz.com.br/inicio'.</msg>
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-10-14T15:17:31.366746" elapsed="2.674407"/>
+<status status="PASS" start="2024-10-14T16:50:13.550787" elapsed="3.232758"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-10-14T15:17:34.041709" elapsed="0.019076"/>
+<status status="PASS" start="2024-10-14T16:50:16.784090" elapsed="0.094949"/>
 </kw>
-<status status="PASS" start="2024-10-14T15:17:31.366069" elapsed="2.695690"/>
+<status status="PASS" start="2024-10-14T16:50:13.550024" elapsed="3.329983"/>
 </kw>
 <kw name="E realize o login" owner="Login_Steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${Login.Preencher_Email}</arg>
 <arg>15</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-14T15:17:34.063732" elapsed="0.106285"/>
+<status status="PASS" start="2024-10-14T16:50:16.885700" elapsed="0.039061"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-14T15:17:34.173861" level="INFO">Typing text 'jacksonsantos@almavivasolutions.com.br' into text field '//*[@id="login_email"]'.</msg>
+<msg time="2024-10-14T16:50:16.926374" level="INFO">Typing text 'jacksonsantos@almavivasolutions.com.br' into text field '//*[@id="login_email"]'.</msg>
 <arg>${Login.Preencher_Email}</arg>
 <arg>${Email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-14T15:17:34.172129" elapsed="0.138890"/>
+<status status="PASS" start="2024-10-14T16:50:16.925488" elapsed="0.213242"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${Login.Preencher_Senha}</arg>
 <arg>15</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-14T15:17:34.311405" elapsed="0.026989"/>
+<status status="PASS" start="2024-10-14T16:50:17.139493" elapsed="0.020752"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-14T15:17:34.339657" level="INFO">Clicking element '//*[@id="passInput"]'.</msg>
+<msg time="2024-10-14T16:50:17.161410" level="INFO">Clicking element '//*[@id="passInput"]'.</msg>
 <arg>${Login.Preencher_Senha}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-14T15:17:34.338780" elapsed="0.037324"/>
+<status status="PASS" start="2024-10-14T16:50:17.160734" elapsed="0.041395"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-14T15:17:34.377622" level="INFO">Typing text 'JSdS210455$#' into text field '//*[@id="passInput"]'.</msg>
+<msg time="2024-10-14T16:50:17.203801" level="INFO">Typing text 'JSdS210455$#' into text field '//*[@id="passInput"]'.</msg>
 <arg>${Login.Preencher_Senha}</arg>
 <arg>${Senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-14T15:17:34.376488" elapsed="0.043936"/>
+<status status="PASS" start="2024-10-14T16:50:17.202663" elapsed="0.053573"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${Login.Clicar_Entrar}</arg>
 <arg>15</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-14T15:17:34.420823" elapsed="0.013695"/>
+<status status="PASS" start="2024-10-14T16:50:17.256569" elapsed="0.014876"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-14T15:17:34.435412" level="INFO">Clicking element '//*[@id="enter-login"]'.</msg>
+<msg time="2024-10-14T16:50:17.272355" level="INFO">Clicking element '//*[@id="enter-login"]'.</msg>
 <arg>${Login.Clicar_Entrar}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-14T15:17:34.434832" elapsed="0.031058"/>
+<status status="PASS" start="2024-10-14T16:50:17.271752" elapsed="0.029718"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-14T15:17:49.467190" level="INFO">Slept 15 seconds.</msg>
+<msg time="2024-10-14T16:50:32.305072" level="INFO">Slept 15 seconds.</msg>
 <arg>15s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-14T15:17:34.466322" elapsed="15.001712"/>
+<status status="PASS" start="2024-10-14T16:50:17.303504" elapsed="15.003012"/>
 </kw>
-<status status="PASS" start="2024-10-14T15:17:34.062967" elapsed="15.405551"/>
+<status status="PASS" start="2024-10-14T16:50:16.881111" elapsed="15.425755"/>
 </kw>
-<kw name="Dado que eu esteja na pagina inicial do Feedz4" owner="Comunicados_Steps">
+<kw name="Dado que eu esteja na pagina inicial do Feedz5" owner="FaleRH_Steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Comunicados.Click_Caixinha}</arg>
+<arg>${FaleRH.Click_Caixinha}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-14T15:17:49.470794" elapsed="0.026495"/>
+<status status="PASS" start="2024-10-14T16:50:32.308313" elapsed="0.014401"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-14T15:17:49.498164" level="INFO">Clicking element '//*[@id="dropdownMenuMobile"]'.</msg>
-<arg>${Comunicados.Click_Caixinha}</arg>
+<msg time="2024-10-14T16:50:32.324339" level="INFO">Clicking element '//*[@id="dropdownMenuMobile"]'.</msg>
+<arg>${FaleRH.Click_Caixinha}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-14T15:17:49.497589" elapsed="0.032753"/>
+<status status="PASS" start="2024-10-14T16:50:32.323529" elapsed="0.032863"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Comunicados.Perfil_Comunicados}</arg>
+<arg>${FaleRH.Perfil_FaleRH}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-14T15:17:49.530651" elapsed="0.016884"/>
+<status status="PASS" start="2024-10-14T16:50:32.357159" elapsed="0.018934"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-14T15:17:49.548527" level="INFO">Clicking element '(//*[@href="/comunicados"])[2]'.</msg>
-<arg>${Comunicados.Perfil_Comunicados}</arg>
+<msg time="2024-10-14T16:50:32.381515" level="INFO">Clicking element '(//*[@href="/ouvidoria"])[2]'.</msg>
+<arg>${FaleRH.Perfil_FaleRH}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-14T15:17:49.547866" elapsed="1.552032"/>
+<status status="PASS" start="2024-10-14T16:50:32.377815" elapsed="1.964327"/>
 </kw>
-<status status="PASS" start="2024-10-14T15:17:49.469662" elapsed="1.630720"/>
+<status status="PASS" start="2024-10-14T16:50:32.307486" elapsed="2.035847"/>
 </kw>
-<kw name="E esteja no comunicados" owner="Comunicados_Steps">
+<kw name="E esteja no faleRH" owner="FaleRH_Steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Comunicados.Itens_Paginas}</arg>
+<arg>${FaleRH.Nova_Tratativas}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-14T15:17:51.102333" elapsed="1.338720"/>
-</kw>
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>${Comunicados.Itens_Paginas}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2024-10-14T15:17:52.441365" elapsed="0.277002"/>
+<status status="PASS" start="2024-10-14T16:50:34.345371" elapsed="0.034658"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-14T15:17:52.720611" level="INFO">Clicking element '//*[@class="select-style"]'.</msg>
-<arg>${Comunicados.Itens_Paginas}</arg>
+<msg time="2024-10-14T16:50:34.386800" level="INFO">Clicking element '(//*[@class="button-primary-md-light ckt-container-header-button"])[1]'.</msg>
+<arg>${FaleRH.Nova_Tratativas}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-14T15:17:52.719073" elapsed="0.053063"/>
+<status status="PASS" start="2024-10-14T16:50:34.381745" elapsed="0.113736"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FaleRH.Assunto}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-14T16:50:34.496384" elapsed="0.030041"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-14T16:50:34.527477" level="INFO">Clicking element '(//*[@class="ckt-text"])'.</msg>
+<arg>${FaleRH.Assunto}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-14T16:50:34.526807" elapsed="0.134906"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-14T16:50:34.662723" level="INFO">Typing text 'gosto da plataforma Feedz' into text field '(//*[@class="ckt-text"])'.</msg>
+<arg>${FaleRH.Assunto}</arg>
+<arg>gosto da plataforma Feedz</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-14T16:50:34.662085" elapsed="0.086349"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FaleRH.Selecionar_Categoria}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-14T16:50:34.748867" elapsed="0.019639"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-14T16:50:34.769399" level="INFO">Clicking element '(//*[@class="multiselect__tags"])[1]'.</msg>
+<arg>${FaleRH.Selecionar_Categoria}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-14T16:50:34.768815" elapsed="0.034589"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FaleRH.Categoria_Escolhida}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-14T16:50:34.803721" elapsed="0.456126"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-14T16:50:35.260791" level="INFO">Clicking element '(//*[@class="multiselect__option"])[1]'.</msg>
+<arg>${FaleRH.Categoria_Escolhida}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-14T16:50:35.260183" elapsed="0.032220"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-14T15:17:57.774080" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-10-14T16:50:40.293322" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-14T15:17:52.772775" elapsed="5.001901"/>
+<status status="PASS" start="2024-10-14T16:50:35.292795" elapsed="5.001125"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Comunicados.Selecionar_Comunicado}</arg>
+<arg>${FaleRH.Descricao}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-14T15:17:57.775329" elapsed="0.030323"/>
+<status status="PASS" start="2024-10-14T16:50:40.294530" elapsed="0.028519"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-14T15:17:57.806516" level="INFO">Clicking element '(//*[@class="ckt-subject-link"])[9]'.</msg>
-<arg>${Comunicados.Selecionar_Comunicado}</arg>
+<msg time="2024-10-14T16:50:40.324134" level="INFO">Clicking element '(//*[@class="ckt-textarea"])[1]'.</msg>
+<arg>${FaleRH.Descricao}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-14T15:17:57.805945" elapsed="0.044395"/>
+<status status="PASS" start="2024-10-14T16:50:40.323420" elapsed="0.026975"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-14T16:50:40.351611" level="INFO">Typing text 'gosto muito da plataforma' into text field '(//*[@class="ckt-textarea"])[1]'.</msg>
+<arg>${FaleRH.Descricao}</arg>
+<arg>gosto muito da plataforma</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-14T16:50:40.350872" elapsed="0.060697"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FaleRH.Cancelar}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-14T16:50:40.412042" elapsed="0.017144"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-14T16:50:40.430283" level="INFO">Clicking element '(//*[@class="button-secondary-sm-light"])[1]'.</msg>
+<arg>${FaleRH.Cancelar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-14T16:50:40.429597" elapsed="0.069540"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-14T15:18:02.851341" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
+<msg time="2024-10-14T16:50:42.499927" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-14T15:17:57.850688" elapsed="5.001282"/>
+<status status="PASS" start="2024-10-14T16:50:40.499457" elapsed="2.001124"/>
 </kw>
-<status status="PASS" start="2024-10-14T15:17:51.101105" elapsed="11.751318"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FaleRH.Botao_Sim}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-14T16:50:42.501241" elapsed="0.030195"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-14T16:50:42.532460" level="INFO">Clicking element '(//*[@class="button-ghost-md-light"])[1]'.</msg>
+<arg>${FaleRH.Botao_Sim}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-14T16:50:42.531778" elapsed="0.031885"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-14T16:50:44.564858" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-14T16:50:42.564121" elapsed="2.001368"/>
+</kw>
+<status status="PASS" start="2024-10-14T16:50:34.344146" elapsed="10.221733"/>
 </kw>
 <kw name="Fechar Navegador" owner="Login_Steps" type="TEARDOWN">
 <kw name="E fecho o navegador" owner="Login_Steps">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-10-14T15:18:02.855570" elapsed="0.091331"/>
+<status status="PASS" start="2024-10-14T16:50:44.568713" elapsed="0.136135"/>
 </kw>
-<status status="PASS" start="2024-10-14T15:18:02.854657" elapsed="0.092525"/>
+<status status="PASS" start="2024-10-14T16:50:44.567829" elapsed="0.137902"/>
 </kw>
-<status status="PASS" start="2024-10-14T15:18:02.853400" elapsed="0.093903"/>
+<status status="PASS" start="2024-10-14T16:50:44.566779" elapsed="0.139204"/>
 </kw>
-<status status="PASS" start="2024-10-14T15:17:31.365201" elapsed="31.582334"/>
+<status status="PASS" start="2024-10-14T16:50:13.549300" elapsed="31.157043"/>
 </test>
-<status status="PASS" start="2024-10-14T15:17:31.242628" elapsed="31.705847"/>
+<status status="PASS" start="2024-10-14T16:50:13.414006" elapsed="31.293262"/>
 </suite>
 <statistics>
 <total>
@@ -161,7 +236,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TC05">TC05</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC06">TC06</stat>
 </suite>
 </statistics>
 <errors>
